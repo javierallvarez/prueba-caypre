@@ -2,13 +2,21 @@
   <v-app>
     <v-main>
       <v-container>
+        <Header/>
         <nuxt />
       </v-container>
     </v-main>
-    <v-footer fixed="fixed" app>
-      <span>&copy; 2022 - Prueba para candidatos</span>
-    </v-footer>
+    <Footer/>
   </v-app>
 </template>
 
 
+<script>
+import Header from '../components/Header.vue'
+import Footer from '../components/Footer.vue';
+
+  export default {
+    components: { Header, Footer }
+}
+
+</script>
